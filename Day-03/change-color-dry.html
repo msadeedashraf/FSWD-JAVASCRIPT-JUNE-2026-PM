@@ -1,0 +1,91 @@
+<!-- Your code has a lot of repetition:
+
+Four separate button classes with mostly identical styles.
+Four separate color-changing functions.
+Repeated document.getElementById(...) calls.
+Font increase/decrease functions hardcode values instead of working dynamically.
+
+A DRY version would use:
+
+One generic .btn class.
+Inline color via CSS variables.
+One changeTitleColor() function.
+One changeFontSize() function. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DRY Example</title>
+
+<style>
+    .btn {
+        width: 70px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: var(--btn-color);
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+</style>
+</head>
+
+<body>
+
+<h1 id="title">Change the font for the text in the paragraph</h1>
+
+<p id="demo">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Asperiores soluta, debitis repellat suscipit quasi eligendi.
+</p>
+
+<hr>
+
+<button onclick="changeFontSize(36, 'red')">Increase</button>
+<button onclick="changeFontSize(16, 'blue')">Decrease</button>
+
+<hr>
+
+<button class="btn"
+        style="--btn-color: green"
+        onclick="changeTitleColor('green')">
+</button>
+
+<button class="btn"
+        style="--btn-color: red"
+        onclick="changeTitleColor('red')">
+</button>
+
+<button class="btn"
+        style="--btn-color: yellow"
+        onclick="changeTitleColor('yellow')">
+</button>
+
+<button class="btn"
+        style="--btn-color: blue"
+        onclick="changeTitleColor('blue')">
+</button>
+
+<script>
+
+const title = document.getElementById('title');
+const demo = document.getElementById('demo');
+
+function changeFontSize(size, color) {
+    demo.style.fontSize = `${size}px`;
+    demo.style.color = color;
+}
+
+function changeTitleColor(color) {
+    title.style.color = color;
+}
+
+</script>
+
+</body>
+</html>
