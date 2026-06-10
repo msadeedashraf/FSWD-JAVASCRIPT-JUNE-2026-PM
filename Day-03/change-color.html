@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .btn-green{
+  background-color: green;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-green:hover{
+
+    background-color: rgb(66, 198, 66);
+}
+
+
+.btn-yellow{
+  background-color: yellow;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-yellow:hover{
+
+    background-color: rgb(244, 229, 26);
+}
+
+
+.btn-red{
+  background-color: red;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-red:hover{
+
+    background-color: rgb(250, 49, 79);
+}
+
+
+.btn-blue{
+  background-color: blue;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-blue:hover{
+
+    background-color: rgb(81, 67, 237);
+}
+   </style>
+</head>
+<body>
+      <h1 id="title">Change the font for the text in the paragraph</h1>
+      <br>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta, debitis repellat suscipit quasi eligendi.</p>
+
+    <button onclick="document.getElementById('demo').style.fontSize = '35px'">Increase Font</button>
+    <button onclick="document.getElementById('demo').style.fontSize = '16px'">Decrease Font</button>
+
+    <br><br>
+<hr>
+<br><br>
+
+<button onclick="increaseFontSize()" >Increase</button>
+<button onclick="decreaseFontSize()" >Decrease</button>
+<br><br>
+<hr>
+<br><br>
+<button onclick="changeColorGreen()" id="btnGreen" class="btn-green"></button>
+<button onclick="changeColorRed()" id="btnRed" class="btn-red"></button>
+<button onclick="changeColorYellow()" id="btnYellow" class="btn-yellow"></button>
+<button onclick="changeColorBlue()" id="btnBlue" class="btn-blue"></button>
+<script>
+
+//alert('welcome to testing')
+
+function increaseFontSize()
+{
+
+    document.getElementById('demo').style.fontSize = '36px';
+    document.getElementById('demo').style.color = 'red';
+
+}
+
+
+function decreaseFontSize()
+{
+
+    document.getElementById('demo').style.fontSize = '16px';
+    document.getElementById('demo').style.color = 'blue';
+
+}
+
+function changeColorGreen()
+{
+    document.getElementById('title').style.color = 'green'
+}
+
+function changeColorYellow()
+{
+    document.getElementById('title').style.color = 'yellow'
+}
+
+function changeColorBlue()
+{
+    document.getElementById('title').style.color = 'blue'
+}
+
+function changeColorRed()
+{
+    document.getElementById('title').style.color = 'Red'
+}
+
+
+
+
+</script>
+</body>
+</html>
