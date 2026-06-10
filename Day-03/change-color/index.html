@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <h1 id="title">Change the font for the text in the paragraph</h1>
+      <br>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores soluta, debitis repellat suscipit quasi eligendi.</p>
+
+    <button onclick="document.getElementById('demo').style.fontSize = '35px'">Increase Font</button>
+    <button onclick="document.getElementById('demo').style.fontSize = '16px'">Decrease Font</button>
+
+    <br><br>
+<hr>
+<br><br>
+
+<button onclick="increaseFontSize()" >Increase</button>
+<button onclick="decreaseFontSize()" >Decrease</button>
+<br><br>
+<hr>
+<br><br>
+<button onclick="changeColorGreen()" id="btnGreen" class="btn-green"></button>
+<button onclick="changeColorRed()" id="btnRed" class="btn-red"></button>
+<button onclick="changeColorYellow()" id="btnYellow" class="btn-yellow"></button>
+<button onclick="changeColorBlue()" id="btnBlue" class="btn-blue"></button>
+<script src="script.js" ></script>
+</body>
+</html>

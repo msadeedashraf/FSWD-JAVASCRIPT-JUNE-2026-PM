@@ -1,0 +1,50 @@
+.btn-green{
+  background-color: green;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-green:hover{
+
+    background-color: rgb(66, 198, 66);
+}
+
+
+.btn-yellow{
+  background-color: yellow;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-yellow:hover{
+
+    background-color: rgb(244, 229, 26);
+}
+
+
+.btn-red{
+  background-color: red;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-red:hover{
+
+    background-color: rgb(250, 49, 79);
+}
+
+
+.btn-blue{
+  background-color: blue;
+  width: 70px;  
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.btn-blue:hover{
+
+    background-color: rgb(81, 67, 237);
+}
