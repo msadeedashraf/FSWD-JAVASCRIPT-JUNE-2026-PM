@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+<h2>JavaScript While Loop</h2>
+
+    <p id="demo"></p>
+
+    <h2>For being used like a While Loop</h2>
+    <p id="demo1"></p>
+    
+    <!-- <h2>Printing All the members of the array using while loop</h2>
+    <p id="demo2"></p> -->
+
+    <script>
+        var text = ""
+        let i = 3
+        while (i < 10)
+            {
+             text += "<br> The number is " + i 
+              i++ 
+            }
+
+        //console.log(text)    
+        document.getElementById('demo').innerHTML = text
+
+const cars = ["BMW", "Volvo", "Honda", "Mazda", "Toyota"]
+
+var y = 0;
+var mytext = ""
+
+while(cars[y])
+{
+    mytext += cars[y] + '<br>'
+    y++
+}
+ document.getElementById('demo1').innerHTML = mytext
+
+    </script>
+    
+</body>
+</html>

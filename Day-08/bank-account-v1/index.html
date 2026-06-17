@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account V1</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <h1>Balance Manager V1</h1>
+
+    <div class="balance">
+        <p>Current Balance: $ <span class="current-balance" id="balance">0</span></p>
+    </div>
+<div class="input-group">
+
+    <label for="depositAmount">Deposit Amount</label>
+    <input type="number" name="" id="depositAmount" value="0" >
+    <button onclick="makeDeposit()"   >Deposit</button>
+
+
+</div>
+
+<div class="input-group">
+
+    <label for="withdrawAmount">Withdraw Amount</label>
+    <input type="number" name="" id="withdrawAmount" value="0" >
+    <button onclick="makeWithdraw()"   >Withdraw</button>
+
+
+</div>
+
+<div id="statement">
+<h3>Transaction Statement</h3>
+
+<ul id="transaction">
+    <!-- <li> Credit : $0 | Balance : S2000</li>
+      <li> Credit : $0 | Balance : S2000</li>
+        <li> Credit : $0 | Balance : S2000</li>
+          <li> Credit : $0 | Balance : S2000</li> -->
+</ul>
+
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

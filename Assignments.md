@@ -28,7 +28,7 @@ Temp Calculator ![Temp Calculator](/assets/projects/temp-convertor.png)
 Loan Calculator ![Loan Calculator](/assets/projects/loan-calculator.png)
 
 ### Assignment # 10
-Refactor the four_function_calculator.html in day05 folder to use the switch statement [switch](https://www.w3schools.com/js/js_switch.asp).
+Refactor the four_function_calculator.html in day06 folder to use the switch statement [switch](https://www.w3schools.com/js/js_switch.asp).
 
 ### Assignment # 11
 Refactor BankAccount [Version 0](https://github.com/msadeedashraf/javascript-102024-am/tree/main/day12/BankAccount) 
