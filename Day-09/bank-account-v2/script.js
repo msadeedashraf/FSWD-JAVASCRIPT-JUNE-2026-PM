@@ -67,16 +67,6 @@ function addTransaction(type, amount)
                 <td>$ ${myBalance}</td>`
 
 transactionList.appendChild(transactionRow)
-//  <tr>
-
-                // <td>2026/06/18</td>
-                // <td>Withdrawal</td>
-                // <td>$ 100</td>
-                // <td>$ 5100</td>
-                
-//             </tr>
-
-
 
 }
 
