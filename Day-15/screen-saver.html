@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen saver</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            color: rgb(205, 204, 204);
+            text-align: center;
+        }
+
+         .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            z-index: -1;
+            transition: background-image 1s ease-in-out;
+        }
+       
+        .time-display {
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="background" id="image">
+
+
+   </div>
+<div class="time-display" id="time">
+
+
+</div>
+
+
+<script>
+
+
+const myImages = [
+            "https://images.pexels.com/photos/858115/pexels-photo-858115.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "https://images.unsplash.com/photo-1543877087-ebf71fde2be1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+            "https://images.unsplash.com/photo-1501265976582-c1e1b0bbaf63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+
+
+]
+
+    function updateBackground()
+    {
+        const bgimage = document.getElementById('image')
+        const ranIndex = Math.floor(Math.random()*myImages.length)
+        bgimage.style.backgroundImage = `url('${myImages[ranIndex]}')`
+        
+
+    }
+    function updateTime()
+    {
+        const currentTime = new Date();
+
+        const timeDisplay = document.getElementById('time');
+
+           const hour = currentTime.getHours()
+           const minutes = currentTime.getMinutes()
+           const sec = currentTime.getSeconds()
+
+
+        timeDisplay.textContent = `${hour} : ${minutes} : ${sec}`
+    }
+
+
+    setInterval(updateTime ,1000)
+    setInterval(updateBackground ,5000)
+
+</script>
+
+    
+</body>
+</html>
