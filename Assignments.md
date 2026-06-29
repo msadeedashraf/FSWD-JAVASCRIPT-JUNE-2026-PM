@@ -50,4 +50,12 @@ Creating Analog Clock. [Clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=2s&
 Creating a calculator. [calculator](https://www.youtube.com/watch?v=j59qQ7YWLxw&t=2s&pp=ygUxY3JlYXRlIGEgY2FsY3VsYXRvciB1c2luZyBodG1sIGNzcyBhbmQgamF2YXNjcmlwdA%3D%3D)
 
 ### Assignment # 14
+- Connect to the Monkey Data 
+- Use Day-16 jobzila/joblisting page as an example
+- https://raw.githubusercontent.com/jamesmontemagno/app-monkeys/master/MonkeysApp/monkeydata.json
+
+![](./assets/monkey-display.png)
+
+
+### Assignment # 15
 Random Meal Generator [link](/day19/random_recipe_assignment/)
