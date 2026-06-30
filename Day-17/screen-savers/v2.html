@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11 Screensaver</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+
+        /* Background animation */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #2a5298, #1e3c72);
+            background-size: 200% 200%;
+            animation: gradientAnimation 10s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Time Display */
+        .time-display {
+            font-size: 6em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Date Display */
+        .date-display {
+            font-size: 2em;
+            font-weight: 300;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+
+    <!-- Time and Date Display -->
+    <div class="content">
+        <div class="time-display" id="time-display"></div>
+        <div class="date-display" id="date-display"></div>
+    </div>
+
+    <script>
+        function updateScreensaver() {
+            const timeDisplay = document.getElementById("time-display");
+            const dateDisplay = document.getElementById("date-display");
+
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+            timeDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+            dateDisplay.textContent = now.toLocaleDateString(undefined, options);
+        }
+
+        // Update every second
+        setInterval(updateScreensaver, 1000);
+        updateScreensaver(); // Initial call to display immediately
+    </script>
+
+</body>
+</html>

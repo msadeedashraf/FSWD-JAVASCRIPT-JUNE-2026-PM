@@ -59,3 +59,6 @@ Creating a calculator. [calculator](https://www.youtube.com/watch?v=j59qQ7YWLxw&
 
 ### Assignment # 15
 Random Meal Generator [link](/day19/random_recipe_assignment/)
+
+### Assignment # 16
+Refactor the Day-17/random-recipe-v2 to get rid of the empty ingredients list.
