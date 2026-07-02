@@ -43,4 +43,8 @@
 
 ### For APIs
 
+
+[Public API Lists](https://github.com/public-api-lists/public-api-lists)
 [API Ninja](https://api-ninjas.com/)
+[Rapid API](https://rapidapi.com/)
+[Open Weather API](https://home.openweathermap.org/api_keys)
