@@ -41,3 +41,6 @@
 [YouTube](https://www.youtube.com/watch?v=YZWSIdfM__s&ab_channel=KevinPowell)
 
 
+### For APIs
+
+[API Ninja](https://api-ninjas.com/)
